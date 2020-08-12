@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var playerName = window.prompt("What is your robot's name?");
 
 // Note the lack of quotation marks around playerName
@@ -19,7 +18,6 @@ function fight() {
   }
 
  // fight();
-=======
 // Game States
 // "WIN" - Player robot has defeated all enemy robots
 //    * Fight all enemy robots
@@ -157,4 +155,3 @@ var endGame = function() {
 
 //start the game when the page loads
 startGame();
->>>>>>> develop
