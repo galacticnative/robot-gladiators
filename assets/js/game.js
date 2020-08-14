@@ -172,6 +172,18 @@ var shop = function() {
     } 
 };
 
+//function to set name
+var getPlayerName = function() {
+    var name = "";
+
+    while (name === "" || name === null) {
+        name = prompt("What is your robot's name?");
+    }
+
+    console.log("Your robot's name is " + name);
+    return name;
+};
+
 // function to generate a random numeric value
 //added min, max within function parantheses
 var randomNumber = function(min, max) {
@@ -182,7 +194,7 @@ var randomNumber = function(min, max) {
 
 //removed player variables (playerName, playerHealth, playerAttack, playerMoney) and replaced with object
 var playerInfo = {
-    name: window.prompt("What is your robot's name?"),
+    name: getPlayerName(),
     health: 100,
     attack: 10,
     money: 10,
